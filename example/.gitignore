@@ -1,0 +1,76 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ============================================================
+# FLUTTER EXAMPLE APP
+# ============================================================
+
+# Build output — termasuk APK yang baru saja Anda build
+build/
+*.apk
+*.aab
+*.ipa
+
+# Dart tooling
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Firebase config — TIDAK di-commit di shared package example
+# (tiap app repo punya config-nya sendiri)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Derived files
+*.ipr
+*.iws
+.metadata

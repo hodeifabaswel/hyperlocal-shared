@@ -1,0 +1,15 @@
+name: hyperlocal_shared_example
+description: Visual preview untuk komponen hyperlocal_shared
+publish_to: 'none'
+
+environment:
+  sdk: ^3.7.0    # Samakan dengan pubspec induk
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hyperlocal_shared:
+    path: ../
+
+flutter:
+  uses-material-design: true
