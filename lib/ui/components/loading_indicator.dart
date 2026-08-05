@@ -15,9 +15,10 @@ class LoadingIndicator extends StatelessWidget {
           const CircularProgressIndicator(),
           if (message != null) ...[
             const SizedBox(height: 16),
-            Text(message!,
-                style:
-                    TextStyle(fontSize: 14, color: Colors.grey.shade600)),
+            Text(
+              message!, // ⚠️ JANGAN hapus `!` - field tipenya String?
+              style: const TextStyle(fontSize: 16.0, color: Colors.black54),
+            ),
           ],
         ],
       ),

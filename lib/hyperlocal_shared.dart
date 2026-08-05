@@ -17,3 +17,7 @@ export 'ui/map_widget.dart';
 export 'ui/components/primary_button.dart';
 export 'ui/components/loading_indicator.dart';
 export 'ui/components/error_empty_state.dart';
+// UI Components (New for Sprint 3)
+export 'ui/components/state_view.dart';
+export 'ui/components/app_card.dart';
+export 'ui/components/app_banner.dart';

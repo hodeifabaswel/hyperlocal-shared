@@ -30,18 +30,26 @@ class PrimaryButton extends StatelessWidget {
               foregroundColor: Colors.white,
               disabledBackgroundColor: Colors.grey.shade300,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12)),
+                borderRadius: BorderRadius.circular(12),
+              ),
             ),
-            child: isLoading
-                ? const SizedBox(
-                    width: 24,
-                    height: 24,
-                    child: CircularProgressIndicator(
-                        strokeWidth: 2, color: Colors.white),
-                  )
-                : Text(label,
-                    style: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.w600)),
+            child:
+                isLoading
+                    ? const SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: Colors.white,
+                      ),
+                    )
+                    : Text(
+                      label,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
           ),
         ),
         if (disabledReason != null && onPressed == null)
@@ -49,7 +57,11 @@ class PrimaryButton extends StatelessWidget {
             padding: const EdgeInsets.only(top: 4),
             child: Text(
               disabledReason!,
-              style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+              style: const TextStyle(
+                fontSize: 16.0,
+                color: Colors.grey, // Hierarki lewat warna, bukan ukuran
+                fontWeight: FontWeight.w400,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
