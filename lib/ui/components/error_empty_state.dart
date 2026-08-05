@@ -25,13 +25,20 @@ class ErrorEmptyState extends StatelessWidget {
           children: [
             Icon(icon, size: 64, color: Colors.grey.shade400),
             const SizedBox(height: 16),
-            Text(message,
-                style:
-                    TextStyle(fontSize: 16, color: Colors.grey.shade700),
-                textAlign: TextAlign.center),
+            Text(
+              message,
+              style: TextStyle(fontSize: 16, color: Colors.grey.shade700),
+              textAlign: TextAlign.center,
+            ),
             if (actionLabel != null && onAction != null) ...[
               const SizedBox(height: 16),
-              TextButton(onPressed: onAction, child: Text(actionLabel!)),
+              TextButton(
+                onPressed: onAction,
+                child: Text(
+                  actionLabel!,
+                  style: const TextStyle(fontSize: 16.0), // Paksa 16sp
+                ),
+              ),
             ],
           ],
         ),

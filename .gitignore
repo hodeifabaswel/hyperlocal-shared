@@ -29,3 +29,45 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 /build/
 /coverage/
+
+# ============================================================
+# FLUTTER PACKAGE — hyperlocal-shared
+# ============================================================
+
+# Flutter/Dart tooling
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+
+# Package metadata — lock file TIDAK di-commit untuk package
+# (berbeda dengan aplikasi, di mana lock file WAJIB di-commit)
+pubspec.lock
+
+# IDE & OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment & secrets — JANGAN PERNAH commit
+.env
+.env.*
+*.pem
+*.key
+google-services*.json
+GoogleService-Info.plist
+
+# Documentation build
+docs/_build/
+
+# ============================================================
+# TEST COVERAGE
+# ============================================================
+coverage/
+*.lcov
